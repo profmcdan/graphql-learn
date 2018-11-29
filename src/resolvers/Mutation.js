@@ -45,18 +45,9 @@ async function login(parent, args, context, info) {
 	};
 }
 
-function post(parent, args, context, info) {
-	const userId = getUserId(context);
-	return context.db.mutation.createLink(
-		{
-			data: {
-				url: args.url,
-				description: args.description,
-				postedBy: { connect: { id: userId } }
-			}
-		},
-		info
-	);
+function post(parent, { url, description }, ctx, info) {
+	const userId = getUserId(ctx);
+	return ctx.db.mutation.createLink({ data: { url, description, postedBy: { connect: { id: userId } } } }, info);
 }
 
 async function vote(parent, args, context, info) {
