@@ -124,6 +124,13 @@ apollo-cache-control@^0.1.0:
   dependencies:
     graphql-extensions "^0.0.x"
 
+apollo-link-context@^1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/apollo-link-context/-/apollo-link-context-1.0.10.tgz#c20b0b32c6e4e08c0d3967174f9c2a897c8431fe"
+  integrity sha512-HX3BEmkANs2A8AcYCy92SFJrW+0SbGrhDTSHV6ZwKIJ9ZrsOtly8cMrRLzEw1emjHIz5SP7XJEn3ko7BwhBBSw==
+  dependencies:
+    apollo-link "^1.2.4"
+
 apollo-link-error@1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/apollo-link-error/-/apollo-link-error-1.1.2.tgz#d068fdf99892e6fc65cfe0390db8528d182f9481"
